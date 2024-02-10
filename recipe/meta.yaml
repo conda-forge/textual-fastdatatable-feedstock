@@ -1,5 +1,5 @@
 {% set name = "textual-fastdatatable" %}
-{% set version = "0.7.0" %}
+{% set version = "0.7.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/textual_fastdatatable-{{ version }}.tar.gz
-  sha256: 641860e00d48d7bc78420b8d7dc2322ceed63c38ff8b5b9d77e4b907e6c4b3ed
+  sha256: 02d929ddd755e7d23936ea8090c549090816e9eca63cc14a06ac2a82a556b763
 
 build:
   noarch: python
