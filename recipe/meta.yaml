@@ -1,5 +1,5 @@
 {% set name = "textual-fastdatatable" %}
-{% set version = "0.7.1" %}
+{% set version = "0.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/textual_fastdatatable-{{ version }}.tar.gz
-  sha256: 02d929ddd755e7d23936ea8090c549090816e9eca63cc14a06ac2a82a556b763
+  sha256: cb2d5793afa4443255e0e17da4c57748cd7a753ee1b1fbd84a01eecc3f350e76
 
 build:
   noarch: python
@@ -20,8 +20,10 @@ requirements:
     - poetry-core
     - pip
   run:
+    - pytz >=2023,<2025
+    - tzdata >=2023
     - python >=3.8.0,<4.0.0
-    - textual >=0.38.0
+    - textual >=0.41.0
     - pyarrow >=7.0.0
 
 test:
