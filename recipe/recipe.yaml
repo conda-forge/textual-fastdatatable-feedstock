@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: textual-fastdatatable
-  version: 0.15.0
+  version: 0.16.0
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/textual_fastdatatable-${{ version }}.tar.gz
-  sha256: b4c5ab6c90d510c52bfbbc19d4a978a6f0311b358a9bc7bbaefe2870dd730676
+  sha256: 9d91f6d257bde25e244379d03b3fbcc92edafcfae983d8270ad34b0f344f1d97
 
 build:
   number: 0
@@ -23,11 +23,10 @@ requirements:
     - hatchling
     - pip
   run:
-    - numpy >=2.1.0,<2.3.0
-    - pandas >=2.2.1,<3
     - python >=${{ python_min }},<4.0.0
-    - textual >=0.89.1
-    - pyarrow >=18.1.0,<22
+    - textual >=7.3.0
+    - pyarrow >=18.1.0
+    - typing_extensions >=4.4.0
 tests:
   - python:
       python_version: ${{ python_min }}.*
