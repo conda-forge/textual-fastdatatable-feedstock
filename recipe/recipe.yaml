@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: textual-fastdatatable
-  version: "0.19.4"
+  version: "0.19.5"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/textual_fastdatatable-${{ version }}.tar.gz
-  sha256: a09bbcb6ac4d437b8e3d16eca510846948c173035047a23f594f07efe764d9d7
+  sha256: 5e6140e13f6a18d6ea827d1e97e9cb8be12253fad4ad58e14afd6dab966c35bc
 
 build:
   number: 0
